@@ -19,4 +19,10 @@ public class TestCalculator {
     public void emptyStringShouldReturn0() {
         assertEquals(calculator.add(""), 0);
     }
+    
+    @Test
+    public void numberStringShouldReturnSameNumber() {
+        assertEquals(calculator.add("1"), 1);
+        assertEquals(calculator.add("5"), 5);
+    }
 }
