@@ -14,4 +14,9 @@ public class TestCalculator {
     public void initialize() {
         calculator = new Calculator();
     }
+    
+    @Test
+    public void emptyStringShouldReturn0() {
+        assertEquals(calculator.add(""), 0);
+    }
 }
